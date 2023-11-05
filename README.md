@@ -1,4 +1,5 @@
 ## GC-onekey
+## 适用于Ubuntu22.04-x86_64位，其他版本请勿使用
 
 脚本同步[Grasscutters](https://github.com/Grasscutters/Grasscutter)项目，想要自定义其他版本请自行Fork
 
