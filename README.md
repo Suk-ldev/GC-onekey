@@ -8,7 +8,7 @@
 鉴于国内访问Github网络不佳，默认使用 https://ghproxy.com/ 进行加速
 
 ```shell
-yum install wget -y && wget https://ghproxy.com/https://github.com/Suk-ldev/GC-onekey/raw/main/onekey.sh && sed -i 's/\r//' *.sh && chmod +x  onekey.sh && ./onekey.sh
+apt install wget -y && wget https://ghproxy.com/https://github.com/Suk-ldev/GC-onekey/raw/main/onekey.sh && sed -i 's/\r//' *.sh && chmod +x  onekey.sh && ./onekey.sh
 ```
 
 **执行此命令可一键部署服务端，小白直接执行然后根据菜单操作即可**
