@@ -21,7 +21,6 @@ function command_1(){
  	deb https://mirrors.tuna.tsinghua.edu.cn/mongodb/apt/ubuntu jammy/mongodb-org/5.0 multiverse
   	apt-get update
 	apt-get install -y mongodb-org
-	mkdir -p ./mongodb/data ./mongodb/log ./mongodb/conf
 	echo "mongodb 安装完毕"
 	apt install screen
 	echo "screen 安装完毕"
@@ -34,7 +33,6 @@ function command_1(){
 	mkdir Genshin
 	cd Genshin
 	wget "https://ghproxy.com/https://github.com/Grasscutters/Grasscutter/releases/download/"$tag"/grasscutter-"${tag:1:5}".jar"
-	wget "https://ghproxy.com/https://github.com/Suk-ldev/GC-onekey/raw/main/ssl/keystore.p12"
 	git clone https://ghproxy.com/https://github.com/Suk-ldev/Grasscutter_Resources.git
 	cp -r Grasscutter_Resources/Resources .
 	mv Resources resources
@@ -55,7 +53,6 @@ function command_2(){
 	screen_name="Genshin" 
 	screen -dmS $screen_name
 	screen -x -S $screen_name -p 0 -X stuff "cd /root/Genshin && java -jar *.jar
-	"
 	sleep 5
 	my_ip=`curl -s https://ipv4.ipw.cn/api/ip/myip`
 	grep -q "127.0.0.1" /root/Genshin/config.json && sed -i 's#127.0.0.1#'$my_ip'#g' /root/Genshin/config.json || echo ""
