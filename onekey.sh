@@ -23,9 +23,9 @@ function command_1(){
 	mv mongodb-linux-x86_64-rhel70-4.0.28 mongodb
 	mkdir -p ./mongodb/data ./mongodb/log ./mongodb/conf
 	echo "mongodb 安装完毕"
-	yum -y install -y screen
+	apt install screen
 	echo "screen 安装完毕"
-	yum -y install -y git
+	apt install git
 	echo "git 安装完毕"
 	cd ~
 	if [ -d "Genshin" ]; then
