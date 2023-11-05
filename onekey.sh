@@ -34,8 +34,8 @@ function command_1(){
 	mkdir Genshin
 	cd Genshin
 	wget "https://ghproxy.com/https://github.com/Grasscutters/Grasscutter/releases/download/"$tag"/grasscutter-"${tag:1:5}".jar"
-	wget "https://ghproxy.com/https://github.com/cool-chill/GC-onekey/raw/main/ssl/keystore.p12"
-	git clone https://ghproxy.com/https://github.com/tamilpp25/Grasscutter_Resources.git
+	wget "https://ghproxy.com/https://github.com/Suk-ldev/GC-onekey/raw/main/ssl/keystore.p12"
+	git clone https://ghproxy.com/https://github.com/Suk-ldev/Grasscutter_Resources.git
 	cp -r Grasscutter_Resources/Resources .
 	mv Resources resources
 	rm -rf Grasscutter_Resources
@@ -171,7 +171,7 @@ function command_6(){
 	cd Genshin
 	rm -f config.json
 	wget "https://ghproxy.com/https://github.com/Grasscutters/Grasscutter/releases/download/"$tag"/grasscutter-"${tag:1:5}".jar"
-	git clone https://ghproxy.com/https://github.com/tamilpp25/Grasscutter_Resources.git
+	git clone https://ghproxy.com/https://github.com/Suk-ldev/Grasscutter_Resources.git
 	cp -r Grasscutter_Resources/Resources .
 	mv Resources resources
 	rm -rf Grasscutter_Resources
@@ -218,9 +218,8 @@ do
 	cd ~
 	echo "*--------------------------------------------------------*"
 	echo "               原神(Grasscutter)一键脚本                  "
-	echo "                   coolchill && ioi                       "
 	echo "                        已开源                            "
-	echo "     开源地址：https://github.com/cool-chill/GC-onekey    "
+	echo "     开源地址：https://github.com/Suk-ldev/GC-onekey    "
 	echo "*--------------------------------------------------------*"
 	echo "1. 一键安装环境并部署最新服务端                           "
 	echo "2. 启动服务端                                             "
