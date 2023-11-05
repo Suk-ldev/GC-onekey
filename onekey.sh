@@ -17,10 +17,10 @@ function command_1(){
 		source /etc/profile
 		echo "java 安装完毕"
 	fi
-	wget https://list.1ioi.cn/d/resources/mongodb/mongodb-linux-x86_64-rhel70-4.0.28.tgz
-	tar -zxvf mongodb-linux-x86_64-rhel70-4.0.28.tgz
-	rm -f mongodb-linux-x86_64-rhel70-4.0.28.tgz
-	mv mongodb-linux-x86_64-rhel70-4.0.28 mongodb
+	wget -qO - https://www.mongodb.org/static/pgp/server-5.0.asc | apt-key add -
+ 	deb https://mirrors.tuna.tsinghua.edu.cn/mongodb/apt/ubuntu jammy/mongodb-org/5.0 multiverse
+  	apt-get update
+	apt-get install -y mongodb-org
 	mkdir -p ./mongodb/data ./mongodb/log ./mongodb/conf
 	echo "mongodb 安装完毕"
 	apt install screen
@@ -191,8 +191,6 @@ function command_886(){
 	rm -fr /root/Genshin
 	rm -fr /opt/mongodb
 	rm -fr /opt/jdk-17.0.4.1
-	yum -y remove screen
-	yum -y remove git
 	sed -i '$d' /etc/profile
 	sed -i '$d' /etc/profile
 	sed -i '$d' /etc/profile
