@@ -32,8 +32,8 @@ function command_1(){
 	fi
 	mkdir Genshin
 	cd Genshin
-	wget "https://ghproxy.com/https://github.com/Grasscutters/Grasscutter/releases/download/"$tag"/grasscutter-"${tag:1:5}".jar"
-	git clone https://ghproxy.com/https://github.com/Suk-ldev/Grasscutter_Resources.git
+	wget "https://mirror.ghproxy.com/https://github.com/Grasscutters/Grasscutter/releases/download/"$tag"/grasscutter-"${tag:1:5}".jar"
+	git clone https://mirror.ghproxy.com/https://github.com/Suk-ldev/Grasscutter_Resources.git
 	cp -r Grasscutter_Resources/Resources .
 	mv Resources resources
 	rm -rf Grasscutter_Resources
