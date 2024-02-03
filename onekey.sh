@@ -17,10 +17,11 @@ function command_1(){
 		source /etc/profile
 		echo "java 安装完毕"
 	fi
-	wget -qO - https://www.mongodb.org/static/pgp/server-5.0.asc | apt-key add -
- 	deb https://mirrors.tuna.tsinghua.edu.cn/mongodb/apt/ubuntu jammy/mongodb-org/5.0 multiverse
-  	apt-get update
-	apt-get install -y mongodb-org
+	https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu2204-6.0.13.tgz
+ 	tar -zxvf mongodb-linux-x86_64-ubuntu2204-6.0.13.tgz
+  	rm -f mongodb-linux-x86_64-ubuntu2204-6.0.13.tgz
+	mv mongodb-linux-x86_64-ubuntu2204-6.0.13 mongodb
+	mkdir -p ./mongodb/data ./mongodb/log ./mongodb/conf
 	echo "mongodb 安装完毕"
 	apt install screen
 	echo "screen 安装完毕"
